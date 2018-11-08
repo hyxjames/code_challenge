@@ -1,0 +1,19 @@
+Use gcc -std=c++11 Firewall.cpp Rule.cpp codeChallenge.cpp -o challenge to compiler
+then use ./challenge target.csv to run
+
+======================
+implementation detail
+In this problem, I use hash set to store all the possible rule sets, then try to see if we can find a rule in the set. If it is in the set, we accept this.
+I aim to get fastest speed in this case, while the space complexity might be high.
+More detailed implementation can be seen throught the codes
+
+=========================
+Future jobs
+Sorry that I do not have enough time to make it bug free. If I have more time, I would firstly make it bug-free. 
+Secondary, I want to test that we hash direction, bound, and port, and set ip address as vector of intervals. This will lead to a higher time complexity, but reduce space complexity. I want to see if the new tradeoff makes sense.
+Thirdly, I will test some corner cases, such as overlap intervals or redundancies.
+In the end, I will handle the bad inputs to make sure the program will not get error.
+
+===========================
+Group Preference:
+All the three groups sound good, my preference would be Policy > platform > data.
